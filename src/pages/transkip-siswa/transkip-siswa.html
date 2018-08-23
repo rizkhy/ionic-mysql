@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar color = "primary">
+    <ion-title>Transkip Siswa</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+      <ion-label>Semester</ion-label>
+        <ion-select [(ngModel)]="semester" (ionChange)="getSemester()">
+          <ion-option value="Ganjil">Ganjil</ion-option>
+          <ion-option value="Genap">Genap</ion-option>
+        </ion-select>
+  </ion-item>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      <ion-icon name="ios-list-box-outline" danger item-left></ion-icon>
+      <h2>{{ item.nama_mp }}</h2>
+      <p>Nilai : {{ item.nilai_akhir }}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

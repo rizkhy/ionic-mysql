@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar color = "primary">
+    <ion-title>Presensi Siswa</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item  *ngFor="let item of items">
+      <ion-icon name="ios-stats" danger item-left></ion-icon>
+      <h2>{{ item.nama_mp }}</h2>
+      <p>
+         Hadir : {{ item.hadir }}x | Izin : {{ item.izin }}x
+      </p>
+      <p> 
+         Sakit : {{ item.sakit }}x | Alpa : {{ item.alpa }}x
+      </p>
+    </ion-item>
+  </ion-list>
+</ion-content>

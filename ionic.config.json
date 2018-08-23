@@ -1,0 +1,7 @@
+{
+  "name": "siakad",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

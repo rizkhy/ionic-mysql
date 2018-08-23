@@ -1,0 +1,55 @@
+<ion-header>
+
+  <ion-navbar color = "primary">
+    <ion-title>Biodata Siswa</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+   <ion-list>
+    <ion-item *ngFor="let item of items">
+      <p>NIS</p>
+      <h2>{{ item.nis }}</h2>
+    </ion-item>
+    <ion-item *ngFor="let item of items">
+      <p>Nama Lengkap</p>
+      <h2>{{ item.nama }}</h2>
+    </ion-item>
+    <ion-item *ngFor="let item of items">
+      <p>Alamat</p>
+      <h2>{{ item.alamat }}</h2>
+    </ion-item>
+    <ion-item *ngFor="let item of items">
+      <p>Jenis Kelamin</p>
+      <h2>{{ item.jk }}</h2>
+    </ion-item>
+    <ion-item *ngFor="let item of items">
+      <p>Password</p>
+      <h2>{{ item.password }}</h2>
+    </ion-item>
+    <ion-item *ngFor="let item of items">
+      <p>Nama Orang Tua</p>
+      <h2>{{ item.nama_ortu }}</h2>
+    </ion-item>
+    <ion-item *ngFor="let item of items">
+      <p>Pekejerjaan Orang Tua</p>
+      <h2>{{ item.pkjr_ortu }}</h2>
+    </ion-item>
+    <ion-item *ngFor="let item of items">
+      <p>Kelas</p>
+      <h2>{{ item.kode_kelas }}</h2>
+    </ion-item>
+    <ion-item *ngFor="let item of items">
+      <p>Semester</p>
+      <h2>{{ item.semester }}</h2>
+    </ion-item>
+    <ion-item *ngFor="let item of items">
+      <p>Tahun Ajaran</p>
+      <h2>{{ item.thn_ajaran }}</h2>
+    </ion-item>
+</ion-list>
+
+ </ion-content>

@@ -1,0 +1,35 @@
+<ion-header>
+
+<ion-navbar  color="dark">
+   <ion-title>
+   <h2 align="center">
+   Biodata Guru
+   </h2>
+   </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+   <ion-list>
+    <ion-item *ngFor="let item of items">
+      <p>NIP</p>
+      <h2>{{ item.nip }}</h2>
+    </ion-item>
+    <ion-item *ngFor="let item of items">
+      <p>Nama Lengkap</p>
+      <h2>{{ item.nama }}</h2>
+    </ion-item>
+    <ion-item *ngFor="let item of items">
+      <p>Alamat</p>
+      <h2>{{ item.alamat }}</h2>
+    </ion-item>
+    <ion-item *ngFor="let item of items">
+      <p>Password</p>
+      <h2>{{ item.password }}</h2>
+    </ion-item>
+</ion-list>
+
+ </ion-content>
